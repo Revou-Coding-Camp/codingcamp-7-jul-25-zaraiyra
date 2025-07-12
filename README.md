@@ -26,5 +26,6 @@ I would gladly say thanks to these web and its team because they make my coding 
 - [Font Awesome](https://fontawesome.com)
 - [Flatpickr](https://flatpickr.js.org)
 - [Favicon.io](https://favicon.io)
+
 Also to [RevoU](https://www.revou.co) team for the briefs & idea, so I can build more mini-project for my portfolio.
 
