@@ -5,7 +5,7 @@ A simple To Do List to track your task easily.
 ## Table of Contents
 - [Usage](#usage)
 - [Warning](#warning)
-- [Thanks to](#thanks)
+- [Thanks](#thanks)
 
 
 ## Usage
@@ -21,8 +21,10 @@ You can create a task by adding a todo name and the due date, then just click th
 This app will not store your todo permanently, once refreshed, you'll lose it all.
 
 ## Thanks
+I would gladly say thanks to these web and its team because they make my coding life so much easier!
 - [Tailwind.css](https://tailwindcss.com)
 - [Font Awesome](https://fontawesome.com)
 - [Flatpickr](https://flatpickr.js.org)
 - [Favicon.io](https://favicon.io)
+Also to [RevoU](https://www.revou.co) team for the briefs & idea, so I can build more mini-project for my portfolio.
 
