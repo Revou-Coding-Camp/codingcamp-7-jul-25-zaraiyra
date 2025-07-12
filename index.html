@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Web Title -->
+    <title>Todo List</title>
+    <!-- Web Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/header-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/header-icon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/header-icon/favicon-32x32.png">
+    <link rel="manifest" href="./assets/header-icon/site.webmanifest">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-indigo-950">
+    <!-- Content -->
+    <div class="content-wrapper min-h-screen min-w-screen flex items-center justify-center p-25 ">
+        <!-- Card -->
+        <div class="card content bg-blue-200 shadow-md rounded-lg p-6 max-h-md mx-auto text-indigo-950">
+            <!-- Card Header -->
+            <div class="card-header mb-4">
+                <h1 class="text-2xl font-bold text-center">Todo List</h1>
+            </div>
+            <!-- Card Body -->
+            <div class="card-body m-1 p-2">
+                <form action="" class="flex sm:flex-col sm:items-start lg:flex-row lg:space-x-3 lg:justify-between lg:items-center text-white">
+                    <!-- Todo Name -->
+                    <div class="mb-4">
+                        <input type="text" id="todo" class="w-full p-2 ring-2 ring-blue-300 bg-blue-950 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Todo name here...">
+                    </div>
+                    <!-- Todo Due-date -->
+                    <div class="mb-4">
+                        <input type="text" id="due-date" class="w-full p-2 ring-2 ring-blue-300 bg-blue-950 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Due date here...">
+                    </div>
+                    <!-- Add Button -->
+                    <div class="mb-4 ">
+                        <button type="button" onclick="addTodo()" class="px-3 py-2 bg-blue-500 text-white flex justify-center rounded hover:bg-blue-600 transition duration-200 group relative inline-block duration-300">
+                            <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+                            <!-- Add below text when the screen in sm -->
+                            <!-- <span class="hidden sm:inline-block sm:ml-2">Add Todo</span> -->
+                            <!-- Button tooltip -->
+                            <span class="sm:opacity-0 absolute top-full mt-2 left-1/2 transform -translate-x-1/2 bg-gray-700 text-white text-xs rounded py-1 px-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Add todo
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <!-- Filter & Delete All Buttons -->
+                <div class="flex justify-between items-center mb-4 space-x-4">
+                    <div class="flex space-x-2">
+                        <!-- Show All -->
+                        <!-- <button id="filter-all" onclick="toggleAllTodos()" class="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200 uppercase">
+                            All
+                        </button> -->
+                        <!-- Completed -->
+                        <button id="filter-completed" onclick="toggleTodoList()" class="px-3 py-2 bg-blue-950 text-slate-300 rounded hover:bg-blue-900 hover:text-white transition duration-200 uppercase">
+                            Completed
+                        </button>
+                    </div>
+                    <button id="delete-all" onclick="clearTodos()" class="px-3 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-200 uppercase">
+                        Delete All
+                    </button>
+                </div>
+                <!-- Table -->
+                <div class="table-wrapper w-full mx-auto mt-4">
+                    <table class="w-full bg-blue-200 text-indigo-950 rounded-lg shadow-md">
+                        <thead class="bg-blue-500 text-white text-center">
+                            <tr>
+                                <th class="p-4">Todo</th>
+                                <th class="p-4">Due Date</th>
+                                <th class="p-4">Status</th>
+                                <th class="p-4">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="todo-list" class="divide-y divide-gray-300">
+                            <!-- Todo items will be dynamically added here -->
+                            <tr class="text-blue-950 text-center">
+                                <td colspan="4" id="noTodos" class="p-4 text-center text-gray-500 noTodos">No todos added yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer text-center fixed bottom-0 w-full py-4">
+        <p class="text-sm text-blue-200">© 2025 Todo List by @zaraiyra</p>
+    </div>
+
+    <!-- Flatpickr -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <!-- Script -->
+    <script src="script/script.js"></script>
+</body>
+</html>
