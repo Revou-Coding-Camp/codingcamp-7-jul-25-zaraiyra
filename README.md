@@ -3,12 +3,12 @@ A simple To Do List to track your task easily.
 ![Alt Text - Screenshot of the project](assets/screenshots.png)
 
 ## Table of Contents
-- [How to Use](#howto)
+- [Usage](#usage)
 - [Warning](#warning)
-- [Thanks to](#thanksto)
+- [Thanks to](#thanks)
 
 
-## How to Use
+## Usage
 You can create a task by adding a todo name and the due date, then just click the plus button. And ✨ VOILA ✨ you just added a new todo.
 
 ### Additional Features
@@ -20,7 +20,7 @@ You can create a task by adding a todo name and the due date, then just click th
 ## Warning
 This app will not store your todo permanently, once refreshed, you'll lose it all.
 
-## Thanks to
+## Thanks
 - [Tailwind.css](https://tailwindcss.com)
 - [Font Awesome](https://fontawesome.com)
 - [Flatpickr](https://flatpickr.js.org)
